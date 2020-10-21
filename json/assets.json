@@ -1,0 +1,61 @@
+{
+
+	"places": [
+		{
+			"name": "Arena 1",
+			"uid": "arena1",
+			"objects": [
+				{
+					"name": "Arena",
+					"reference": "environment/arena",
+					"startPos": { "x": 0, "y": 0, "z": 0 },
+					"startRot": { "x": 0, "y": 0, "z": 0 }
+				},
+				{
+					"name": "Dome",
+					"reference": "environment/dome",
+					"startPos": { "x": 0, "y": 0, "z": 0 },
+					"startRot": { "x": 0, "y": 0, "z": 0 }
+				}
+			],
+			"scene": {
+				"envMap": "kloppenheim_02"
+			}
+		},
+		{
+			"name": "Arena Test",
+			"uid": "arena-test",
+			"objects": [
+				{
+					"name": "Arena",
+					"reference": "environment/arena-test",
+					"startPos": { "x": 0, "y": 0, "z": 0 },
+					"startRot": { "x": 0, "y": 0, "z": 0 }
+				}
+			],
+			"scene": {
+				"envMap": "unearthly-red-4k.hdr",
+				"backgroundMap": "cape_hill",
+				"sunSettings": {
+					"intensity": 2,
+					"inclination": 0.38,
+					"azimuth": 0.20
+				}
+			}
+		}
+	],
+
+	"characters": [
+		{
+			"name": "Drow 1",
+			"uid": "drow1",
+			"reference": "characters/drow1"
+		},
+		{
+			"name": "Orc 1",
+			"uid": "orc1",
+			"reference": "characters/orc1"
+		}
+	]
+
+}

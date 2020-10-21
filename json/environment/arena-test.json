@@ -1,0 +1,12 @@
+{
+	"file": "arena-test.glb",
+	"type": "static",
+	"materialOverride": {
+		"reflectivity": 0,
+		"side": 0,
+		"roughness": 1
+	},
+	"physics": {
+		"friction": 2
+	}
+}

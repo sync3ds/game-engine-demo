@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+		<title>Tower Defense Demo</title>
+		<link type="text/css" rel="stylesheet" href="styles.css">
+	</head>
+
+	<body>
+
+		<section id="loading-screen">
+			<div class="spinner">
+				<div class="rect1"></div>
+				<div class="rect2"></div>
+				<div class="rect3"></div>
+				<div class="rect4"></div>
+				<div class="rect5"></div>
+			</div>
+		</section>
+
+		<div id="window"></div>
+
+		<div id="user-selection">
+			<form id="form">
+				<div class="row">
+					<input type="text" id="username" name="username" value="Guest" placeholder="Insert your username">
+				</div>
+				<div class="row">
+					<p>Select the arena:</p>
+					<input type="radio" name="arena" value="arena1" checked> Level 1
+				</div>
+				<div class="row">
+					<button type="submit">Join Map!</button>
+				</div>
+			</form>
+		</div>
+
+		<div id="users-list-wrap">
+			<div id="waiting">
+				<p>Waiting other user to start...</p>
+			</div>
+			<div class="row">
+				<p><b>Users online:</b></p>
+				<ul id="users-list"></ul>
+			</div>
+			<div class="row">
+				<button id="play-game" type="submit">Play!</button>
+			</div>
+		</div>
+
+		<script type="module">
+			import { GameEngine } from "./libs/engine.min.js";
+			import { UserSelector } from "./libs/user-selector.js";
+
+			let gameEngine = new GameEngine();
+
+			let userSelector = new UserSelector(gameEngine);
+			userSelector.listen();
+
+		</script>
+	</body>
+</html>
