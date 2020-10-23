@@ -12,22 +12,15 @@ export class UserSelector {
 	submitForm(evt){
 		evt.preventDefault();
 		this.userSelection.username = document.getElementById('username').value;
-		let arenaRadios = document.getElementsByName('arena');
-		for (var i = 0; i < arenaRadios.length; i++) {
-			if (arenaRadios[i].checked) {
-				this.userSelection.place = arenaRadios[i].value;
-				break;
-			}
-		}
-		let characterRadios = document.getElementsByName('character');
-		for (var i = 0; i < characterRadios.length; i++) {
-			if (characterRadios[i].checked) {
-				this.userSelection.character = characterRadios[i].value;
+		let levelRadios = document.getElementsByName('level');
+		for (var i = 0; i < levelRadios.length; i++) {
+			if (levelRadios[i].checked) {
+				this.userSelection.place = levelRadios[i].value;
 				break;
 			}
 		}
 
-		if(this.userSelection.username && this.userSelection.place && this.userSelection.character){
+		if(this.userSelection.username && this.userSelection.place){
 			this.initEngine();
 		} else {
 			alert("All fields are required.");

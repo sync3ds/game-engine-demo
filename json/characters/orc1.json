@@ -4,6 +4,9 @@
 	"materialOverride": {
 		"alphaMap": null
 	},
+	"objectOverride": {
+		"receiveShadow": false
+	},
 	"camera": {
 		"distanceFromFloor": 3.5,
 		"targetRadius": 8,
