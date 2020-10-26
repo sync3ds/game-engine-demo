@@ -1,9 +1,6 @@
 {
 	"file": "level1.glb",
 	"type": "static",
-	"materialOverride": {
-		"side": 0
-	},
 	"physics": {
 		"friction": 2
 	}

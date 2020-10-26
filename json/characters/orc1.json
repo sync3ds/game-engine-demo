@@ -2,7 +2,8 @@
 	"file": "orc1.glb",
 	"type": "character",
 	"materialOverride": {
-		"alphaMap": null
+		"alphaMap": null,
+		"skinning": true
 	},
 	"objectOverride": {
 		"receiveShadow": false
