@@ -24,7 +24,7 @@
 				"envMap": "unearthly-red-4k.hdr",
 				"backgroundMap": "night_sky",
 				"sunSettings": {
-					"intensity": 0.5,
+					"intensity": 1.5,
 					"inclination": 1.06,
 					"azimuth": 0.38,
 					"skyColor": "#0e0e18",
