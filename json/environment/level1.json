@@ -1,7 +1,0 @@
-{
-	"file": "level1.glb",
-	"type": "static",
-	"physics": {
-		"friction": 2
-	}
-}

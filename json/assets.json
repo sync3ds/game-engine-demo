@@ -2,22 +2,14 @@
 
 	"places": [
 		{
-			"name": "Level 1",
-			"uid": "level1",
+			"name": "Map 1",
+			"uid": "map1",
 			"objects": [
 				{
-					"name": "Level 1",
-					"reference": "environment/level1",
+					"name": "map",
+					"reference": "environment/map1",
 					"startPos": { "x": 0, "y": 0, "z": 0 },
 					"startRot": { "x": 0, "y": 0, "z": 0 }
-				}
-			],
-			"enemies": [
-				{
-					"name": "Orc 1",
-					"uid": "orc1",
-					"reference": "characters/orc1",
-					"count": 10
 				}
 			],
 			"scene": {
@@ -32,6 +24,19 @@
 					"skyIntensity": 0.2
 				}
 			}
+		}
+	],
+
+	"characters": [
+		{
+			"name": "Drow",
+			"uid": "drow",
+			"reference": "characters/drow"
+		},
+		{
+			"name": "Orc",
+			"uid": "orc",
+			"reference": "characters/orc"
 		}
 	]
 

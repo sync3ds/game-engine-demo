@@ -2,12 +2,8 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-		<title>Tower Defense Demo</title>
+		<title>Game Engine Demo</title>
 		<link type="text/css" rel="stylesheet" href="styles.css">
-
-		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-		<meta http-equiv="Pragma" content="no-cache" />
-		<meta http-equiv="Expires" content="0" />
 	</head>
 
 	<body>
@@ -22,7 +18,7 @@
 			</div>
 		</section>
 
-		<!--div id="window"></div-->
+		<div id="window"></div>
 
 		<div id="user-selection">
 			<form id="form">
@@ -30,8 +26,19 @@
 					<input type="text" id="username" name="username" value="Guest" placeholder="Insert your username">
 				</div>
 				<div class="row">
-					<p>Select the place to play:</p>
-					<input type="radio" name="level" value="level1" checked> Level 1
+					<p>Select the map:</p>
+					<input type="radio" name="map" value="map1" checked> Map 1
+					<input type="radio" name="map" value="map2" disabled> Map 2
+					<input type="radio" name="map" value="map3" disabled> Map 3
+				</div>
+				<div class="row">
+					<p>Select your character:</p>
+					<input type="radio" name="character" value="human" disabled> Human
+					<input type="radio" name="character" value="orc" checked> Orc
+					<input type="radio" name="character" value="drow" disabled> Drow<br>
+					<input type="radio" name="character" value="dwarf" disabled> Dwarf
+					<input type="radio" name="character" value="sorcerer" disabled> Sorcerer
+					<input type="radio" name="character" value="goblin" disabled> Goblin
 				</div>
 				<div class="row">
 					<button type="submit">Join Map!</button>
