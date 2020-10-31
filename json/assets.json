@@ -4,26 +4,7 @@
 		{
 			"name": "Map 1",
 			"uid": "map1",
-			"objects": [
-				{
-					"name": "map",
-					"reference": "environment/map1",
-					"startPos": { "x": 0, "y": 0, "z": 0 },
-					"startRot": { "x": 0, "y": 0, "z": 0 }
-				}
-			],
-			"scene": {
-				"envMap": "unearthly-red-4k.hdr",
-				"backgroundMap": "night_sky",
-				"sunSettings": {
-					"intensity": 1.5,
-					"inclination": 1.06,
-					"azimuth": 0.38,
-					"skyColor": "#0e0e18",
-					"groundColor": "#000000",
-					"skyIntensity": 0.2
-				}
-			}
+			"reference": "environment/map1"
 		}
 	],
 
