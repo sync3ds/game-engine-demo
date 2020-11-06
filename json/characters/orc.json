@@ -9,7 +9,7 @@
 	},
 	"camera": {
 		"distanceFromFloor": 3.5,
-		"targetRadius": 12,
+		"targetRadius": 15,
 		"lookAtOffset": 3.5
 	},
 	"physics": {
